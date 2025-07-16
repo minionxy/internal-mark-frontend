@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 const Internalmark = () => {
     const [input, changeInput] = useState({
-        name: "", admnno: "", subject: "", present: "", totalpresent: "", getexam1: "", getexam2: "", getassmark1: "", getassmark2: ""
+        name: "", admnno: "", subject: "", present: "", totalpresent: "", getexam1: "", getexam2: "", getassmark1: "", getassmark2: "", email: ""
     })
 
     const [result, Result] = useState({
@@ -38,6 +38,10 @@ const Internalmark = () => {
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label className="form-label">Name</label>
                     <input type="text" className="form-control" name="name" value={input.name} onChange={inputHandler} />
+                </div>
+                <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label className="form-label">Email</label>
+                    <input type="email" className="form-control" name="email" value={input.email} onChange={inputHandler} />
                 </div>
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label className="form-label">Admission No</label>
