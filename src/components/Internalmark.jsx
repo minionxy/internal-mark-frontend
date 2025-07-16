@@ -8,6 +8,7 @@ const Internalmark = () => {
 
     const [result, Result] = useState({
         name: "",
+        email: "",
         admnno: "",
         subject: "",
         totalinternal: "",
@@ -90,6 +91,7 @@ const Internalmark = () => {
                             </div>
                             <div className="card-body">
                                 <p><strong>Name:</strong> {result.name}</p>
+                                <p><strong>Email:</strong> {result.email}</p>
                                 <p><strong>Admission No:</strong> {result.admnno}</p>
                                 <p><strong>Subject:</strong> {result.subject}</p>
                                 <p><strong>Attendance:</strong> {result.attendance?.toFixed(2)}</p>
