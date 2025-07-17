@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import Navmark from './Navmark'
 
 const Internalmark = () => {
     const [input, changeInput] = useState({
@@ -34,6 +35,7 @@ const Internalmark = () => {
 
     return (
         <div className="container">
+            <Navmark/>
             <h2 className="text-center mt-3">Internal Mark Calculator</h2>
             <div className="row g-3 ">
                 <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -81,7 +83,6 @@ const Internalmark = () => {
                 </div>
             </div>
 
-            {/* Result Card */}
             {result.totalinternal && (
                 <div className="row mt-5">
                     <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
